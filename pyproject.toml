@@ -31,13 +31,17 @@ dev = [
 ]
 pypi = [
     "twine",
-    "build"
+    "build",
+]
+docs = [
+    "jupyter-book",
+    "jupytext",
 ]
 all = [
-   "pseudo-ecg[test]",
-   "pseudo-ecg[docs]",
-   "pseudo-ecg[pypi]",
-   "pseudo-ecg[dev]"
+   "in1910-project3-random-walk[test]",
+   "in1910-project3-random-walk[docs]",
+   "in1910-project3-random-walk[pypi]",
+   "in1910-project3-random-walk[dev]"
 ]
 
 

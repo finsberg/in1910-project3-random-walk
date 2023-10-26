@@ -1,0 +1,7 @@
+format: jb-article
+root: README
+
+sections:
+- file: demo.py
+- file: CONTRIBUTING
+- file: "api.rst"

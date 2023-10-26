@@ -1,0 +1,49 @@
+# Book settings
+# Learn more at https://jupyterbook.org/customize/config.html
+
+title: IN1910 project3 random walk
+author: Henrik Finsberg, Eirill Hauge, Mansur Dadajev
+copyright: "2023"
+only_build_toc_files: true
+
+
+execute:
+  execute_notebooks: cache
+  timeout: 3000
+
+# Information about where the book exists on the web
+repository:
+  url: https://github.com/finsberg/in1910-project3-random-walk # Online location of your book
+  branch: main
+
+
+html:
+  use_issues_button: true
+  use_repository_button: true
+  navigation_with_keys: false
+
+parse:
+  myst_enable_extensions:
+    - amsmath
+    - dollarmath
+    - linkify
+
+sphinx:
+
+  config:
+    html_last_updated_fmt: "%b %d, %Y"
+    html_theme_options:
+      navigation_with_keys: false
+
+    nb_custom_formats:  # https://jupyterbook.org/en/stable/file-types/jupytext.html#file-types-custom
+        .py:
+            - jupytext.reads
+            - fmt: py
+
+
+  extra_extensions:
+  - 'sphinx.ext.autodoc'
+  - 'sphinx.ext.napoleon'
+  - 'sphinx.ext.viewcode'
+
+exclude_patterns: [".pytest_cache/*"]
