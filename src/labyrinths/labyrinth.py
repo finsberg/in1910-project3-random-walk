@@ -43,7 +43,7 @@ def example():
     return arr
 
 
-def labyrinth(layers=2, width=3, height=5):
+def layered_labyrinth(layers=2, width=3, height=5):
     bars = 3 ** (layers + 1)
     Mx = 2 + width * bars + bars - 1
     My = 2 + height * (layers + 2) + width * (layers + 1)
