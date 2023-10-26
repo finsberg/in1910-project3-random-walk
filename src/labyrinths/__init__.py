@@ -6,6 +6,7 @@ from .labyrinth import (
     InvalidSquareError,
     layered_labyrinth,
 )
+from .animation import Animation
 
 __all__ = [
     "plot",
@@ -14,4 +15,5 @@ __all__ = [
     "get_legal_line",
     "InvalidSquareError",
     "layered_labyrinth",
+    "Animation",
 ]

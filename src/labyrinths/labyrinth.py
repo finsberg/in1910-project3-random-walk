@@ -6,7 +6,7 @@ class InvalidSquareError(LookupError):
     pass
 
 
-def get_legal_line(arr, y):
+def get_legal_line(arr: np.ndarray, y: int) -> list[tuple[int, int]]:
     """All legal points at a certain line of maze"""
     if not isinstance(y, (int, np.integer)):
         raise TypeError("line number y must be an int.")
