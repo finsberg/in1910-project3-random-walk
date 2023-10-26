@@ -14,9 +14,6 @@ class MazeWalker(Protocol):
     y: np.ndarray
     maze: np.ndarray
 
-    def plot(self) -> None:
-        ...
-
     def move(self) -> None:
         ...
 
