@@ -1,6 +1,6 @@
-###########
-FEniCS-Beat
-###########
+##########
+labyrinths
+##########
 
 .. automodule:: labyrinths
     :members:
